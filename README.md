@@ -93,7 +93,7 @@ Raw Network Traffic (CICIDS2017)
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/CyberSentry.git
+git clone https://github.com/ADITEE-16/CyberSentry.git
 cd CyberSentry
 ```
 
@@ -102,12 +102,14 @@ cd CyberSentry
 pip install -r requirements.txt
 ```
 
-### 3. Place dataset files
-Put the CICIDS2017 CSV files inside a `/content/` folder (or update the file paths in the script).
+### 3. Download and Place the Dataset Files
+Download the CICIDS2017 dataset CSV files from the official source or a trusted mirror.
+
+Required CSV files should include the network traffic data used by the model.
 
 ### 4. Run
 ```bash
-python choir_ids.py
+python cicids_dataset model.py
 ```
 
 ---
@@ -146,10 +148,10 @@ tensorflow
 | Plot | Description |
 |------|-------------|
 | `confusion_matrix.png` | Predicted vs True labels across all classes |
-| `roc_auc_curve.png` | Per-class ROC curves with AUC scores |
-| `calibration_curve.png` | Sigmoid vs Isotonic probability calibration |
-| `shap_summary.png` | Top 15 features by SHAP importance |
-| `lime_explanation.png` | LIME explanation for a single test instance |
+| `roc_auc curve.png` | Per-class ROC curves with AUC scores |
+| `calibration curve.png` | Sigmoid vs Isotonic probability calibration |
+| `shap features.png` | Top 15 features by SHAP importance |
+| `lime explanations.png` | LIME explanation for a single test instance |
 
 ---
 
@@ -167,14 +169,14 @@ CyberSentry is built with **trustworthy AI** in mind:
 
 ```
 CyberSentry/
-├── choir_ids.py          # Main pipeline script
+├── cicids_dataset model.py          # Main pipeline script
 ├── requirements.txt      # Python dependencies
 ├── README.md             # Project documentation
 ├── confusion_matrix.png  # Output plot
-├── roc_auc_curve.png     # Output plot
-├── calibration_curve.png # Output plot
-├── shap_summary.png      # Output plot
-└── lime_explanation.png  # Output plot
+├── roc_auc curve.png     # Output plot
+├── calibration curve.png # Output plot
+├── shap features.png      # Output plot
+└── lime explanations.png  # Output plot
 ```
 
 ---
@@ -196,8 +198,8 @@ CyberSentry/
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- Email: your@email.com
+- GitHub: [@ADITEE-16](https://github.com/ADITEE-16)
+- Email: aditeetripathy@gmail.com
 
 ---
 
